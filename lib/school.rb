@@ -1,5 +1,10 @@
 class School
   ROSTER = {};
+
+  def initialize
+
+  end
+
   def add_student(student_name, grade)
     if ROSTER["#{grade}"] == nil
       ROSTER["#{grade}"] = []
