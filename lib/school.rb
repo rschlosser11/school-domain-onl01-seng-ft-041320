@@ -3,19 +3,19 @@ class School
 
   def initialize(school_name)
     @school_name = school_name
-    ROSTER = {};
+    @roster = {};
   end
 
   def add_student(student_name, grade)
-    if ROSTER["#{grade}"] == nil
-      ROSTER["#{grade}"] = []
-      ROSTER["#{grade}"] << student_name
+    if @roster["#{grade}"] == nil
+      @roster["#{grade}"] = []
+      @roster["#{grade}"] << student_name
     else
-      ROSTER["#{grade}"] << student_name
+      @roster["#{grade}"] << student_name
     end
   end
 
   def grade(grade)
-    ROSTER["#{grade}"]
+    @roster["#{grade}"]
   end
 end
