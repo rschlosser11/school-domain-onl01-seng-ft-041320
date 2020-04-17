@@ -8,4 +8,7 @@ class School
       ROSTER["#{grade}"] << student_name
     end
   end
+
+  def grade(grade)
+    ROSTER["#{grade}"]
 end
