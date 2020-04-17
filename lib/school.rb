@@ -8,5 +8,4 @@ class School
       ROSTER["#{grade}"] << student_name
     end
   end
-  ROSTER
 end
