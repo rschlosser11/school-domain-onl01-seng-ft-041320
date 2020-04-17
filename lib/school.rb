@@ -11,4 +11,5 @@ class School
 
   def grade(grade)
     ROSTER["#{grade}"]
+  end
 end
